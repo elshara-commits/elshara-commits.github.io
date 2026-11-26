@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5f7f6">
+    <meta name="theme-color" content="#003f87">
     <meta name="description" content="Mohamed El-Sharo, Ph.D. - industrial and systems engineering educator and researcher at Western Washington University.">
     <title>Mohamed El-Sharo, Ph.D. | Industrial &amp; Systems Engineering</title>
     <style>
       :root {
         color-scheme: light;
-        --ink: #172a35;
-        --muted: #52646c;
-        --paper: #f5f7f6;
+        --ink: #1c2023;
+        --muted: #667986;
+        --paper: #f5f8fb;
         --surface: #ffffff;
-        --line: #dce5e3;
-        --green: #176b5b;
-        --green-dark: #105143;
-        --green-pale: #e7f2ef;
-        --gold: #d49c45;
-        --shadow: 0 18px 50px rgba(23, 42, 53, 0.08);
+        --line: #dbe5ed;
+        --blue: #003f87;
+        --blue-dark: #002f66;
+        --blue-bright: #007ac8;
+        --blue-pale: #eaf3f9;
+        --green: #006b3f;
+        --yellow: #ffc61e;
+        --shadow: 0 18px 50px rgba(28, 32, 35, 0.08);
       }
 
       *,
@@ -47,7 +49,7 @@
       }
 
       a:focus-visible {
-        outline: 3px solid var(--gold);
+        outline: 3px solid var(--yellow);
         outline-offset: 4px;
       }
 
@@ -71,7 +73,7 @@
         position: sticky;
         top: 0;
         z-index: 2;
-        border-bottom: 1px solid rgba(220, 229, 227, 0.9);
+        border-bottom: 1px solid rgba(219, 229, 237, 0.9);
         background: rgba(255, 255, 255, 0.94);
         backdrop-filter: blur(14px);
       }
@@ -104,7 +106,7 @@
         height: 40px;
         place-items: center;
         border-radius: 12px;
-        background: var(--green);
+        background: var(--blue);
         color: white;
         font-size: 0.9rem;
         font-weight: 750;
@@ -135,8 +137,8 @@
 
       .nav-links a:hover,
       .nav-links a:focus-visible {
-        background: var(--green-pale);
-        color: var(--green-dark);
+        background: var(--blue-pale);
+        color: var(--blue);
       }
 
       .hero {
@@ -155,7 +157,7 @@
         align-items: center;
         gap: 0.55rem;
         margin: 0 0 1.15rem;
-        color: var(--green);
+        color: var(--blue);
         font-size: 0.76rem;
         font-weight: 750;
         letter-spacing: 0.13em;
@@ -165,7 +167,7 @@
       .eyebrow::before {
         width: 24px;
         height: 2px;
-        background: var(--gold);
+        background: var(--yellow);
         content: "";
       }
 
@@ -186,7 +188,7 @@
 
       .hero-role {
         margin-bottom: 1.5rem;
-        color: var(--green);
+        color: var(--blue);
         font-size: clamp(1.05rem, 2vw, 1.25rem);
         font-weight: 650;
       }
@@ -210,9 +212,9 @@
         align-items: center;
         justify-content: center;
         padding: 0.65rem 1.1rem;
-        border: 1px solid var(--green);
+        border: 1px solid var(--blue);
         border-radius: 999px;
-        background: var(--green);
+        background: var(--blue);
         color: white;
         font-size: 0.9rem;
         font-weight: 700;
@@ -222,7 +224,7 @@
 
       .button:hover {
         transform: translateY(-2px);
-        background: var(--green-dark);
+        background: var(--blue-dark);
       }
 
       .button-secondary {
@@ -232,7 +234,8 @@
       }
 
       .button-secondary:hover {
-        background: white;
+        border-color: var(--blue-bright);
+        background: var(--blue-pale);
       }
 
       .portrait-frame {
@@ -244,7 +247,7 @@
       .portrait-frame::before {
         position: absolute;
         inset: 14px -14px -14px 14px;
-        border: 1px solid #bbd4cc;
+        border: 1px solid #bdd8e8;
         border-radius: 28px;
         content: "";
       }
@@ -257,7 +260,7 @@
         aspect-ratio: 0.92;
         border: 6px solid white;
         border-radius: 24px;
-        background: var(--green-pale);
+        background: var(--blue-pale);
         box-shadow: var(--shadow);
         object-fit: cover;
         object-position: center 36%;
@@ -299,7 +302,7 @@
         border: 1px solid var(--line);
         border-radius: 18px;
         background: var(--surface);
-        box-shadow: 0 6px 22px rgba(23, 42, 53, 0.035);
+        box-shadow: 0 6px 22px rgba(28, 32, 35, 0.035);
       }
 
       .card-number {
@@ -309,8 +312,8 @@
         margin-bottom: 1rem;
         place-items: center;
         border-radius: 10px;
-        background: var(--green-pale);
-        color: var(--green-dark);
+        background: var(--blue-pale);
+        color: var(--blue);
         font-size: 0.8rem;
         font-weight: 750;
       }
@@ -336,7 +339,7 @@
         margin-top: 1.25rem;
         padding: clamp(1.5rem, 4vw, 2.25rem);
         border-radius: 20px;
-        background: var(--ink);
+        background: var(--blue);
         color: white;
       }
 
@@ -347,7 +350,7 @@
 
       .feature-band p {
         margin-bottom: 0;
-        color: #c6d1d2;
+        color: #d7e5f1;
         font-size: 0.92rem;
       }
 
@@ -361,7 +364,7 @@
         padding: 0.45rem 0.75rem;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 999px;
-        color: #f0f5f3;
+        color: #f2f7fc;
         font-size: 0.82rem;
       }
 
@@ -402,6 +405,12 @@
         font-size: 1.15rem;
       }
 
+      .course-note {
+        margin-bottom: 1rem;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
       .course-list {
         display: flex;
         flex-wrap: wrap;
@@ -412,11 +421,37 @@
       }
 
       .course-list li {
-        padding: 0.45rem 0.7rem;
+        padding: 0;
         border-radius: 8px;
-        background: #f0f4f3;
-        color: #344a52;
+        background: var(--blue-pale);
+        color: var(--ink);
         font-size: 0.83rem;
+      }
+
+      .course-list a {
+        display: block;
+        padding: 0.45rem 0.7rem;
+        border-radius: inherit;
+        text-decoration: none;
+      }
+
+      .course-list a:hover {
+        background: var(--blue);
+        color: white;
+      }
+
+      .course-list a:focus-visible {
+        outline-offset: 2px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        clip-path: inset(50%);
       }
 
       .site-footer {
@@ -657,14 +692,15 @@
 
           <div class="course-panel">
             <h3>Courses I have taught</h3>
+            <p class="course-note">Course links open the related official WWU Industrial &amp; Systems Engineering or Engineering program page.</p>
             <ul class="course-list">
-              <li>Applied Numerical Methods</li>
-              <li>Manufacturing Process Planning</li>
-              <li>Fundamentals of Industrial &amp; Systems Engineering</li>
-              <li>Designing &amp; Improving Lean Operations</li>
-              <li>Project Management</li>
-              <li>Operations Management</li>
-              <li>Business Statistics</li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Applied Numerical Methods<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
+              <li><a href="https://www.wwu.edu/majors/engineering">Manufacturing Process Planning<span class="sr-only"> (WWU Engineering majors)</span></a></li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Fundamentals of Industrial &amp; Systems Engineering<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Designing &amp; Improving Lean Operations<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Project Management<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Operations Management<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
+              <li><a href="https://peninsulas.wwu.edu/programs/industrial-and-systems-engineering">Business Statistics<span class="sr-only"> (WWU on the Peninsulas ISE program)</span></a></li>
             </ul>
           </div>
         </div>
